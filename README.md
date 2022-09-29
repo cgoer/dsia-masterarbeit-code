@@ -16,7 +16,9 @@ Aktivierung der Umgebung:
 ``conda activate masterarbeit-goerner``
 
 Installation aller benötigter Packages:  
-```pip install requirements.txt```
+```pip install -r requirements.txt```  
+und  
+```pip install -e .```
 
 **2. Inbetriebnahme der Datenbank**
 
@@ -31,6 +33,8 @@ entpackt werden. Sollte die Datei nicht mehr verfügbar sein stelle ich diese ge
 
 Anschließend können die Daten mit folgendem Befehl in die Datenbank importiert werden:  
 ```sh init_db.sh``` oder ``bash init_db.sh``
+
+Die Datenbank kann über die URI ``mongodb://root:root@0.0.0.0:27017`` erreicht werden.
 
 ---
 ### Struktur
